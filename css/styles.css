@@ -1,7 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'BeVietnamRegular';
-    font-weight: normal;
-    font-style: normal;
+:root {
+  --color-violet: #8b48bf;
+  --color-blue: #3cddf3;
+  --color-gray-blue: #1e1e26;
+  --color-dark-blue: #232851;
+  --color-light-gray: rgb(249, 249, 249);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.banner {
+  background-color: var(--color-violet);
 }
