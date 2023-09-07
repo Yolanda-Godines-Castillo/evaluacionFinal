@@ -19,10 +19,6 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .btn-primary {
   background-color: var(--color-violet);
   opacity: 0.8;
@@ -94,15 +90,76 @@ body {
   font-weight: 400;
 }
 
+.banner-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-light-gray);
+}
+
+.banner {
+  display: flex;
+  padding: 40px 200px;
+  justify-content: space-between;
+}
+
+/* These classes need to be at the end to override the previous rules */
+
+.light {
+  background-color: var(--color-light-gray);
+  color: var(--color-violet);
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 1340px) {
   .section-best {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 80px 40px;
     height: 80vh;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
+  .banner {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 720px) {
+  .banner {
+    padding: 40px 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background-color: var(--color-blue);
+    color: white;
+  }
+
+  .banner-title {
+    padding: 0 40px;
+    margin-bottom: 50px;
+  }
+
+  .light {
+    color: white;
+    font-size: 14px;
+    background-color: var(--color-dark-blue);
+  }
 }
