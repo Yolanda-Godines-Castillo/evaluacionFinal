@@ -4,6 +4,7 @@
   --color-gray-blue: #1e1e26;
   --color-dark-blue: #232851;
   --color-light-gray: rgb(249, 249, 249);
+  --color-light-gray-text: #b3b2b7;
 }
 
 * {
@@ -18,6 +19,90 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-violet);
+  opacity: 0.8;
+  color: var(--color-light-gray);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 135px;
+  cursor: pointer;
+}
+
 .banner {
   background-color: var(--color-violet);
+}
+
+.section-best {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 40px;
+}
+
+.section-title {
+  width: 100vw;
+  color: var(--color-dark-blue);
+  font-size: 32px;
+  font-weight: 700;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.card-professional {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-light-gray);
+  width: 420px;
+  height: 240px;
+  margin: 40px 0;
+}
+
+.card-avatar {
+  position: relative;
+  top: -35px;
+}
+
+.card-title {
+  position: relative;
+  top: -17.5px;
+  color: var(--color-dark-blue);
+  font-weight: 500;
+}
+
+.card-text {
+  color: var(--color-light-gray-text);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: 1340px) {
+  .section-best {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 40px;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
 }
