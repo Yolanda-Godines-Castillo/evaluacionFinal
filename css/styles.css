@@ -124,7 +124,78 @@ body {
   align-items: center;
 }
 
-/* Rules section first */
+/* RULES FOR FOOTER */
+
+.footer {
+  background-color: var(--color-gray-blue);
+}
+
+.fluid-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-rrss {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.rrss {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.red-social {
+  list-style: none;
+}
+
+.container-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 20px;
+  width: auto;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0 70px;
+}
+
+.footer-links li {
+  margin: 20px 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.container-footer-form {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.copy {
+  color: var(--color-light-gray-text);
+  text-align: end;
+  padding: 0 12% 50px 0px;
+}
+
+/* RULES FOR FIRST SECTION */
 
 .enlaces {
   display: none;
@@ -264,7 +335,7 @@ body {
   margin: 20px 0px 30px 0px;
 }
 
-/* Otros dispositivos */
+/* OTROS DISPOSITIVOS */
 
 @media (min-width: 1340px) {
   .section-best {
