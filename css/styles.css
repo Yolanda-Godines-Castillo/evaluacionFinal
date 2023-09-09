@@ -130,7 +130,7 @@ body {
   display: none;
 }
 
-.Bcontactomenu{
+.Bcontactomenu {
   display: none;
 }
 
@@ -307,12 +307,11 @@ body {
 }
 
 @media (min-width: 765px) {
-
   .container {
     padding: 30px;
     margin: 20px;
   }
-  .card1{
+  .card1 {
     align-items: end;
   }
   .enlaces {
@@ -329,7 +328,6 @@ body {
 
   .enlaces li:hover {
     color: #9c9fa5;
-    
   }
 
   .iconomenu {
@@ -349,11 +347,9 @@ body {
     font-size: 0.8rem;
     gap: 900px;
     text-decoration: none;
-
   }
 
   .portada {
-    
     display: flex;
     flex-direction: row;
     align-items: center;
