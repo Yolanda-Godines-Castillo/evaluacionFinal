@@ -322,12 +322,14 @@ body {
     gap: 20px;
   }
 
-  .enlaces li {
-    cursor: pointer;
+  .enlaces li a:hover {
+    color: #9c9fa5;
   }
 
-  .enlaces li:hover {
-    color: #9c9fa5;
+  .enlaces li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #242e52;
   }
 
   .iconomenu {
@@ -357,6 +359,7 @@ body {
   }
 
   .imagen {
+    margin-left: 50px;
     width: 50%;
     height: 50%;
   }
@@ -370,7 +373,7 @@ body {
   }
 
   .contenido-segprincipal {
-    font-size: 0.7em;
+    font-size: 1em;
     text-align: end;
     color: #000000;
     margin-bottom: 30px;
@@ -398,12 +401,25 @@ body {
   }
 
   .seccion2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #8b48bf;
     color: white;
-    padding: 15px;
+    padding: 15px 150px 15px 80px;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  .seccion2 p {
+    width: 50%;
+    font-size: 16px;
+    text-align: left;
   }
   .titulo2 {
     font-weight: bold;
+    font-size: 36px;
+    width: 70%;
   }
 
   .container.sp {
@@ -436,7 +452,7 @@ body {
     font-size: small;
     font-weight: bold;
     color: #323851;
-    background-color: white;
+    background-color: #fafafa;
     text-align: left;
     align-content: center;
   }
@@ -456,5 +472,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #fafafa;
+    padding-top: 40px;
   }
 }
